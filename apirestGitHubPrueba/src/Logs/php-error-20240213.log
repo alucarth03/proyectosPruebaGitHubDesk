@@ -1,0 +1,16 @@
+[13-Feb-2024 12:16:01 America/Mazatlan] PHP Warning:  Undefined array key "correo" in C:\laragon\www\apirest\src\Models\UserModel.php on line 26
+[13-Feb-2024 12:16:01 America/Mazatlan] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property App\Models\userModel::$correo of type string in C:\laragon\www\apirest\src\Models\UserModel.php:26
+Stack trace:
+#0 C:\laragon\www\apirest\src\Controllers\UserController.php(43): App\Models\userModel->__construct(Array)
+#1 C:\laragon\www\apirest\src\Routes\user.php(14): App\Controllers\UserController->post('user/')
+#2 C:\laragon\www\apirest\public\index.php(21): require('C:\\laragon\\www\\...')
+#3 {main}
+  thrown in C:\laragon\www\apirest\src\Models\UserModel.php on line 26
+[13-Feb-2024 12:18:03 America/Mazatlan] Conexion exitosa
+[13-Feb-2024 12:18:03 America/Mazatlan] Conexion exitosa
+[13-Feb-2024 12:18:03 America/Mazatlan] Conexion exitosa
+[13-Feb-2024 12:18:03 America/Mazatlan] UserModel::post -> SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'fecha' at row 1
+[13-Feb-2024 12:21:44 America/Mazatlan] Conexion exitosa
+[13-Feb-2024 12:21:44 America/Mazatlan] Conexion exitosa
+[13-Feb-2024 12:21:44 America/Mazatlan] Conexion exitosa
+[13-Feb-2024 12:21:54 America/Mazatlan] Conexion exitosa

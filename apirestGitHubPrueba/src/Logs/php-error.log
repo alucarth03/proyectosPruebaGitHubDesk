@@ -1,0 +1,12 @@
+[11-Feb-2024 14:12:42 America/Mazatlan] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered unexpected whitespace at ['kdsf837836291902nfks';]. in C:\laragon\www\apirest\vendor\vlucas\phpdotenv\src\Parser\Parser.php:30
+Stack trace:
+#0 C:\laragon\www\apirest\vendor\graham-campbell\result-type\src\Error.php(119): Dotenv\Parser\Parser::Dotenv\Parser\{closure}('Encountered une...')
+#1 C:\laragon\www\apirest\vendor\vlucas\phpdotenv\src\Parser\Parser.php(31): GrahamCampbell\ResultType\Error->mapError(Object(Closure))
+#2 C:\laragon\www\apirest\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Parser\Parser->parse('\r\nSECRET_KEY = ...')
+#3 C:\laragon\www\apirest\src\Config\Security.php(11): Dotenv\Dotenv->load()
+#4 C:\laragon\www\apirest\src\Routes\auth.php(5): App\Config\Security::secretKey()
+#5 C:\laragon\www\apirest\public\index.php(21): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\apirest\vendor\vlucas\phpdotenv\src\Parser\Parser.php on line 30
+[11-Feb-2024 14:26:18 America/Mazatlan] La contraseña es incorrecta
+[12-Feb-2024 11:20:24 America/Mazatlan] Conexion exitosa
